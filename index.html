@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login"> 
+        <div class="left-login">
+            <h1>TTWBrasil</h1>
+            <img src="robo.svg" class="left-login-image" alt="Robo">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login" onclick="logar()">Login</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function logar() {
+            var usuario = document.getElementById('usuario').value;
+            var senha = document.getElementById('senha').value;
+            
+            if (usuario === "admin" && senha === "admin") {
+                alert('Sucesso! Você está logado.');
+                location.href ="home.html";
+            } else {
+                alert('Usuário ou senha incorretos. Tente novamente.');
+            }
+        }
+    </script>
+</body>
+</html>
