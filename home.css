@@ -1,0 +1,93 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'outfit' sans-serif;
+
+}
+
+body{
+    
+    height: 100vh;
+    background-color: #F4EEE4;
+
+}
+
+.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color:#F4EEE4;
+    padding: 40px 0px 40px 1%;
+    box-shadow: 3px 0px 0px #3D441E;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir {
+width: 100%;
+padding-left: 10px ;
+
+}
+
+.btn-expandir > i{
+    color: #3D441E ;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+
+ul li.ativo{
+    background-color:#D4D5CC  ;
+}
+
+
+ul li.item-menu:hover{
+    background: #D4D5CC;
+}
+
+ul li.item-menu a{
+    color: #3D441E;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+
+}
+
+.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
